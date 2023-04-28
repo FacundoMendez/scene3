@@ -195,12 +195,15 @@ const sceneSpace = () => {
             const movement = () => {
 
                 button1.addEventListener("click", () => {
+
+
                     gsap.to(camera.position, {
-                        z: -30 ,
-                        duration:6 
+                        z: -35 ,
+                        duration:14 
                     })
                     gsap.to(camera.rotation, {
                         y: 3 ,
+                        delay: 5,
                         duration: 6
                     })
                 })
@@ -208,7 +211,7 @@ const sceneSpace = () => {
                 button2.addEventListener("click", () => {
                     gsap.to(camera.position, {
                         z: 12 ,
-                        duration: 6
+                        duration: 8
                     })
                     gsap.to(camera.rotation, {
                         y: 0 ,
@@ -220,12 +223,12 @@ const sceneSpace = () => {
 
                 button3.addEventListener("click", () => {
                     gsap.to(camera.position, {
-                        z: -1 ,
-                        duration: 2  
+                        z: 0 ,
+                        duration: 5  
                     })
                     gsap.to(camera.rotation, {
                         y: 0 ,
-                        duration: 2  
+                        duration: 5  
                     })
                 })
               
